@@ -1,0 +1,23 @@
+{
+  "name": "admin-tpl",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Andre pereira"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~4.0.0",
+    "datatables": "^1.10.21",
+    "datatables-plugins": "^1.10.21",
+    "bootstrap-social": "^5.1.1"
+  }
+}

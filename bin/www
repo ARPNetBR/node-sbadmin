@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+ const app = require('../server');
+// var debug = require('debug')('node-sbadmin:server');
+
+
+const PORT = process.env.PORT || '3000';
+
+app.listen(PORT, () => {
+    console.log("http://localhost:3000/");
+    });
+    

@@ -1,0 +1,10 @@
+{
+    "database": {
+        "mongodb": {
+            "address":"localhost:27017"
+        },
+        "name": "db_name"
+    },
+    "environment" : "development"
+  
+  }

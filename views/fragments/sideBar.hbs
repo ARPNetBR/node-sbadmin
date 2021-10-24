@@ -1,0 +1,157 @@
+    <!-- Sidebar -->                                                
+    <ul class="navbar-nav bg-light-dark sidebar sidebar-dark accordion " id="accordionSidebar" >
+ 
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item ">
+        <a class="nav-link" href="">          
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+      </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+      <li class="nav-item">
+        <a class="nav-link " href="" >
+        <i class="fa fa-users" aria-hidden="true"></i>
+          <span>users</span>
+        </a>       
+      </li>
+      <hr class="sidebar-divider">
+
+      <li class="nav-item">
+        <a class="nav-link " href="" >
+        <i class="fa fa-user-plus" aria-hidden="true"></i>
+          <span>Suppliers</span>
+        </a>       
+      </li>
+      <hr class="sidebar-divider">
+
+      <li class="nav-item">
+        <a class="nav-link " href="" >
+        <i class="fa fa-handshake-o" aria-hidden="true"></i>
+          <span>Partners</span>
+        </a>       
+      </li>
+
+
+      <hr class="sidebar-divider">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#masterData" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fa fa-table" aria-hidden="true"></i>
+          <span>Master Data</span>
+        </a>
+        <div id="masterData" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-dark py-2 collapse-inner rounded text-white">            
+            <a class="sub-item" href="<?php echo base_url('platform');?>">Link1</a>
+            <a class="sub-item" href="<?php echo base_url('games');?>">Link2</a>
+            <a class="sub-item" href="<?php echo base_url('internet');?>">Link3</a>
+            <!--
+              <a class="sub-item" href="<?php echo base_url('teams_brand');?>"><?php echo lang('link_teams');?></a>
+            -->
+            <a class=" collapsed sub-item" href="#" data-toggle="collapse" data-target="#regions" 
+                  aria-expanded="false" aria-controls="collapseTwo">
+              <span>Regioes</span>
+            </a>
+            <div class="collapse"  id="regions"
+            aria-labelledby="heading3" data-parent="#masterData">
+            <div class="bg-white py-2 collapse-inner rounded " style="">            
+            <a class="collapse-item" href="">Link1</a>
+            <a class="collapse-item" href="">Link2</a>
+            <a class="collapse-item" href="">Link3</a>
+            </div>
+            </div>
+              
+            <!-- <a class="sub-item" href="<?php echo base_url('countries');?>"><?php echo lang('link_countries');?></a> -->
+          </div>
+        </div>
+      </li>    
+
+      <hr class="sidebar-divider">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#comunication" aria-expanded="true" aria-controls="collapseTwo">
+        <i class="fa fa-bullhorn"></i>
+          <span>Comunication</span>
+        </a>
+        <div id="comunication" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-dark py-2 collapse-inner rounded">            
+            <a class="sub-item " href="">link1</a>
+            <a class="sub-item " href="">link1</a>
+            <a class="sub-item " href="">link1</a>
+            <a class="sub-item " href="">link1</a>            
+          </div>
+        </div>
+      </li>    
+
+      <hr class="sidebar-divider">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#tickets" aria-expanded="true" aria-controls="collapseTwo">
+         <i class="fa fa-headphones "></i>
+          <span>Tickets</span>
+        </a>
+        <div id="tickets" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-dark py-2 collapse-inner rounded">            
+            <a class="sub-item " href="">Link</a>
+            <a class="sub-item " href="">Link</a>
+            
+          </div>
+        </div>
+      </li>    
+
+      <!-- <hr class="sidebar-divider">
+      <li class="nav-item">
+        <a class="nav-link " href="<?php echo base_url('messages');?>" >
+        <i class="far fa-envelope"></i>
+          <span><?php echo lang('messages')?></span>
+        </a>       
+      </li> -->
+      
+      <hr class="sidebar-divider">
+      <li class="nav-item">
+        <a class="nav-link " href="<?php echo base_url('tournaments');?>" >
+        <i class="fa fa-trophy"></i>
+          <span>Torneiros</span>
+        </a>       
+      </li>
+
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+
+      <!-- Nav Item - Utilities Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#settings" aria-expanded="true" aria-controls="settings">
+        <i class="fa fa-cogs"></i>
+          <span>Config</span>
+        </a>  
+
+        <div id="settings" class="collapse" aria-labelledby="settings" data-parent="#accordionSidebar">
+          <div class="bg-dark py-2 collapse-inner rounded text-white">            
+            <a class="sub-item" href="">Link</a>
+            <!-- <a class="collapse-item" href="<?php echo base_url('settings/email');?>"><?php echo lang('link_email');?></a>             -->
+            <a class="sub-item" href="">Link</a>
+            <a class="sub-item" href="">Link</a>            
+          </div>
+        </div>
+
+      </li>
+     
+       <!-- Divider -->
+       <hr class="sidebar-divider d-none d-md-block">
+
+       <li class="nav-item">
+        <a class="nav-link " href="" title="Sair" >
+        <i class="fa fa-sign-out"></i>
+        <span>Sair</span>
+        </a>       
+        </a>       
+      </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+    </ul>
+    <!-- End of Sidebar -->

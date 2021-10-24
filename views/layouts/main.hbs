@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="expires" content="Sun, 01 Jan 2014 00:00:00 GMT"/>
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>{{title}}</title>
+
+    
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+   <link href="/dist/vendor/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+  
+  <link href="/dist/css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  {{!-- <link href="<?php echo $assets; ?>css/fixed-layout.css?v=<?php  get_random_str(5)?>" rel="stylesheet"> --}}
+  <link href="/dist/css/custom.css?v=" rel="stylesheet">
+<style>
+
+</style>
+</head>
+
+<body id="page-top sidebar-toggled ">
+  <!-- <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+  </div> -->
+  <!-- Page Wrapper -->
+  <div id="wrapper"> 
+    {{> sideBar}}
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <!-- Main Content -->
+      <div id="content">
+        {{>navBar}}
+        <!-- Begin Page Content -->
+        <div class="container-fluid my-fluid active border bg-primary"  >      
+          <div class="msgHandler"></div>     
+{{!-- 
+
+      <?php echo $token === true ? get_csrf_token() : $token;?> --}}
+       
+		<!-- Page content goes here... -->
+            {{> (content) }}
+
+
+        </div>
+        <!-- /.container-fluid -->
+      </div>
+<!-- End of Main Content -->
+      {{>footer}}
+    </div>
+<!-- End of Content Wrapper -->
+  </div>
+   
+ 
+
+  <script type="text/javascript">  
+    document.body.classList.add("loading");
+  </script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+  <!-- Bootstrap core JavaScript-->
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="/dist/js/jquery-easing/jquery.easing.min.js"></script>
+  
+  <script src="/dist/js/sb-admin-2.min.js"></script>
+  
+  {{>overlay}}
+</body>
+</html>
